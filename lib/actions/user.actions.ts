@@ -149,6 +149,7 @@ export const createLinkToken = async (user: User) => {
             products: ['auth'] as Products[],
             language: 'en',
             country_codes: ['US'] as CountryCode[],
+            redirect_uri: 'https://banking-two-ashy.vercel.app/',
         }
 
         const response = await plaidClient.linkTokenCreate(tokenParams);
